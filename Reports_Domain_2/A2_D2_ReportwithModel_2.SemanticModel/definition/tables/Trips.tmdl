@@ -1,0 +1,82 @@
+table Trips
+	lineageTag: d5ed4460-959a-4aa1-951f-07f5df4c0e42
+
+	column tpep_pickup_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6ef4f2ec-2aa6-4c20-a6dc-0b0b512ec20b
+		summarizeBy: none
+		sourceColumn: tpep_pickup_datetime
+
+		variation Variation
+			isDefault
+			relationship: 903d4e9d-ef27-422f-9ddc-95110abe0ed9
+			defaultHierarchy: LocalDateTable_7655226c-a059-4721-97c8-0a17fd968edd.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column tpep_dropoff_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2fa18009-ed1f-4de3-82eb-6979a9c6078d
+		summarizeBy: none
+		sourceColumn: tpep_dropoff_datetime
+
+		variation Variation
+			isDefault
+			relationship: f324352d-2bdd-40e6-a643-4a7f86dc2870
+			defaultHierarchy: LocalDateTable_5911c87e-bf93-4071-876b-ef8ccbb450e7.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column trip_distance
+		dataType: double
+		lineageTag: b7246088-d9dc-42a7-acef-9dc1cc2ed7c1
+		summarizeBy: sum
+		sourceColumn: trip_distance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fare_amount
+		dataType: double
+		lineageTag: 20d78c3a-d3a9-42f2-be6c-fdebccaaa471
+		summarizeBy: sum
+		sourceColumn: fare_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pickup_zip
+		dataType: int64
+		formatString: 0
+		lineageTag: 164c1e64-39f6-416b-9040-1a71e5f867d4
+		summarizeBy: sum
+		sourceColumn: pickup_zip
+
+		annotation SummarizationSetBy = Automatic
+
+	column dropoff_zip
+		dataType: int64
+		formatString: 0
+		lineageTag: 8943a5df-33fb-4050-87e4-6bdb039a62e6
+		summarizeBy: sum
+		sourceColumn: dropoff_zip
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Trips = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs(Host_param, HttpPath_param, [Catalog=Catalog_param, Database=Schema_param, EnableAutomaticProxyDiscovery=null]),
+				    trips_nyctaxi_dev_catalog_dev = Source{[Item="trips",Schema=Schema_param,Catalog= Catalog_param]}[Data]
+				in
+				    trips_nyctaxi_dev_catalog_dev
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
