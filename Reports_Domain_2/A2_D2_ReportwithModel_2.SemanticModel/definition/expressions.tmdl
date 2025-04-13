@@ -1,0 +1,32 @@
+/// provide the Host details
+expression Host_param = "dbc-4069458e-9508.cloud.databricks.com" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 192cb56a-1673-4df5-878d-500aef386eb8
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+/// provide Http path
+expression HttpPath_param = "/sql/1.0/warehouses/73276b3bbb71597f" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: e07aa790-6aca-4e37-9e9d-9d2f6ef6b559
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+/// Provide the Catalog
+expression Catalog_param = "catalog_dev" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 9ac437b4-c0b8-4b16-bf7f-f458645919ea
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+/// Provide Schema or Database
+expression Schema_param = "nyctaxi_dev" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: cd62799b-2b0d-43f3-971c-f19b1e91f178
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
