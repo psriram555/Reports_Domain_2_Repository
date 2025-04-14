@@ -2,10 +2,10 @@
   "version": "4.0",
   "datasetReference": {
     "byConnection": {
-      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/SemanticModels_UAT;Initial Catalog=SematicModel_of_Domain_2;Access Mode=readonly;Integrated Security=ClaimsToken",
+      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/SematicModels_Dev;Initial Catalog=SematicModel_of_Domain_2;Access Mode=readonly;Integrated Security=ClaimsToken",
       "pbiServiceModelId": null,
       "pbiModelVirtualServerName": "sobe_wowvirtualserver",
-      "pbiModelDatabaseName": "685ca890-1238-4e38-8e6e-5a8d3e421778",
+      "pbiModelDatabaseName": "6d2c1dd7-5598-46f6-83fd-13000b1e314b",
       "name": "EntityDataSource",
       "connectionType": "pbiServiceXmlaStyleLive"
     }
