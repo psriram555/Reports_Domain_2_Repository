@@ -1,0 +1,10 @@
+relationship 903d4e9d-ef27-422f-9ddc-95110abe0ed9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Trips.tpep_pickup_datetime
+	toColumn: LocalDateTable_7655226c-a059-4721-97c8-0a17fd968edd.Date
+
+relationship f324352d-2bdd-40e6-a643-4a7f86dc2870
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Trips.tpep_dropoff_datetime
+	toColumn: LocalDateTable_5911c87e-bf93-4071-876b-ef8ccbb450e7.Date
+
