@@ -27,12 +27,21 @@
       "name": "38d1044c57fcb77000f0",
       "visualContainers": [
         {
-          "config": "{\"name\":\"668db10788286726f134\",\"layouts\":[{\"id\":0,\"position\":{\"x\":506.4605873261206,\"y\":394.9636669819373,\"z\":1,\"width\":563.1539366536714,\"height\":236.22228886479505,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Trips.tpep_dropoff_datetime.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"Trips.tpep_dropoff_datetime.Variation.Date Hierarchy.Day\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Trips.fare_amount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Trips\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Name\":\"Variation\",\"Property\":\"tpep_dropoff_datetime\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Trips.tpep_dropoff_datetime.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"tpep_dropoff_datetime Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Name\":\"Variation\",\"Property\":\"tpep_dropoff_datetime\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Trips.tpep_dropoff_datetime.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"tpep_dropoff_datetime Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"fare_amount\"}},\"Function\":0},\"Name\":\"Sum(Trips.fare_amount)\",\"NativeReferenceName\":\"Sum of fare_amount\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"559c53d177071b0275a5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":716.2259798380586,\"y\":105.82758541142819,\"z\":2,\"width\":563.1539366536714,\"height\":236.22228886479505,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Trips.trip_distance)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Trips\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"trip_distance\"}},\"Function\":0},\"Name\":\"Sum(Trips.trip_distance)\",\"NativeReferenceName\":\"Sum of trip_distance\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"trip_distance\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 236.22,
           "width": 563.15,
-          "x": 506.46,
-          "y": 394.96,
+          "x": 716.23,
+          "y": 105.83,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"668db10788286726f134\",\"layouts\":[{\"id\":0,\"position\":{\"x\":187.08805278091768,\"y\":427.0898982675495,\"z\":1,\"width\":563.1539366536714,\"height\":236.22228886479505,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Trips.tpep_dropoff_datetime.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"Trips.tpep_dropoff_datetime.Variation.Date Hierarchy.Day\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Trips.fare_amount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Trips\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Name\":\"Variation\",\"Property\":\"tpep_dropoff_datetime\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Trips.tpep_dropoff_datetime.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"tpep_dropoff_datetime Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Name\":\"Variation\",\"Property\":\"tpep_dropoff_datetime\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Trips.tpep_dropoff_datetime.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"tpep_dropoff_datetime Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"fare_amount\"}},\"Function\":0},\"Name\":\"Sum(Trips.fare_amount)\",\"NativeReferenceName\":\"Sum of fare_amount\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 236.22,
+          "width": 563.15,
+          "x": 187.09,
+          "y": 427.09,
           "z": 1.00
         },
         {
